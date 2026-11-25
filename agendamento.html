@@ -1,0 +1,378 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Veja na prática como o Vitally funciona para pacientes e secretários." />
+    <title>Vitally | Como funciona</title>
+    <link
+      rel="shortcut icon"
+      href="img/frequencia-cardiaca.png"
+      type="image/x-icon"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+
+  <body>
+    <header class="header">
+      <img src="img/logo vitally.png" alt="Vitally" class="logo" />
+
+      <nav class="menu-desktop">
+        <a href="index.html">Início</a>
+        <a href="projeto.html">O Projeto</a>
+        <a href="agendamento.html" class="atual">Como Funciona</a>
+        <a href="index.html#baixar" class="btn-baixar">Baixe o App</a>
+      </nav>
+
+      <div id="menuBtn" class="menu-icon">☰</div>
+    </header>
+
+    <div class="fundo-menu"></div>
+
+    <nav class="menu-lateral">
+      <ul>
+        <li><a href="index.html">Início</a></li>
+        <li><a href="projeto.html">O Projeto</a></li>
+        <li><a href="agendamento.html">Como Funciona</a></li>
+        <li><a href="index.html#baixar">Baixe o App</a></li>
+      </ul>
+    </nav>
+
+    <section class="destaque">
+      <h2><strong>Agendamento <br />Simplificado</strong></h2>
+
+      <p class="descricao">
+        Cuide da sua saúde sem preocupações. Veja os horários disponíveis,
+        solicite sua consulta e acompanhe tudo pelo aplicativo.
+      </p>
+
+      <div class="botoes">
+        <a
+          href="https://play.google.com/store/search?q=Vitally&c=apps&hl=pt_BR"
+          target="_blank"
+          class="google"
+        >
+          <img src="img/google-play.png" alt="logo" />
+          Google Play
+        </a>
+        <a
+          href="https://www.apple.com/br/app-store/"
+          target="_blank"
+          class="apple"
+        >
+          <img src="img/logotipo-da-apple.png" alt="logo" />
+          App Store
+        </a>
+      </div>
+    </section>
+
+    <section class="func">
+      <h2>Em 3 passos</h2>
+
+      <div class="cards">
+        <div class="card">
+          <img src="img/inscricao-confirmada.png" alt="Cadastro confirmado" class="icon" />
+          <h3>1. Entre no Aplicativo</h3>
+          <p>Cadastre-se ou faça login para acessar suas consultas.</p>
+        </div>
+
+        <div class="card">
+          <img src="img/calendario.png" alt="Calendário" class="icon" />
+          <h3>2. Escolha o Melhor Horário</h3>
+          <p>Veja os dias e horários disponíveis e selecione o ideal para você.</p>
+        </div>
+
+        <div class="card">
+          <img src="img/agenda.png" alt="Agenda" class="icon" />
+          <h3>3. Acompanhe sua Consulta</h3>
+          <p>Confira data, horário e especialidade e cancele se precisar, conforme as regras do posto.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="secao-clara" id="demonstracao">
+      <h2 class="titulo-secao">Veja na prática</h2>
+      <p class="texto-secao">
+        Escolha um perfil, clique nos passos e interaja com a simulação do
+        aplicativo.
+      </p>
+
+      <div class="abas">
+        <button class="aba ativa" data-perfil="paciente">Paciente</button>
+        <button class="aba" data-perfil="secretaria">Secretário(a)</button>
+      </div>
+
+      <div class="demo">
+        <div class="lista-passos">
+          <ol class="passos" data-perfil="paciente">
+            <li>
+              <button class="passo ativo" data-tela="t-login">
+                <b>1</b>
+                <span><strong>Entre no app</strong><small>Faça login ou cadastre-se.</small></span>
+              </button>
+            </li>
+            <li>
+              <button class="passo" data-tela="t-horarios">
+                <b>2</b>
+                <span><strong>Escolha o horário</strong><small>Especialidade, dia e horário disponíveis.</small></span>
+              </button>
+            </li>
+            <li>
+              <button class="passo" data-tela="t-confirmacao">
+                <b>3</b>
+                <span><strong>Solicitação enviada</strong><small>Veja o resumo da sua consulta.</small></span>
+              </button>
+            </li>
+            <li>
+              <button class="passo" data-tela="t-consultas">
+                <b>4</b>
+                <span><strong>Acompanhe</strong><small>Consulte e cancele, se precisar.</small></span>
+              </button>
+            </li>
+          </ol>
+
+          <ol class="passos oculto" data-perfil="secretaria">
+            <li>
+              <button class="passo ativo" data-tela="t-solicitacoes">
+                <b>1</b>
+                <span><strong>Solicitações</strong><small>Confirme os pedidos dos pacientes.</small></span>
+              </button>
+            </li>
+            <li>
+              <button class="passo" data-tela="t-agenda">
+                <b>2</b>
+                <span><strong>Agenda do dia</strong><small>Veja os atendimentos organizados.</small></span>
+              </button>
+            </li>
+            <li>
+              <button class="passo" data-tela="t-pacientes">
+                <b>3</b>
+                <span><strong>Pacientes</strong><small>Cadastre e gerencie pacientes.</small></span>
+              </button>
+            </li>
+            <li>
+              <button class="passo" data-tela="t-resumo">
+                <b>4</b>
+                <span><strong>Resumo</strong><small>Agendadas, canceladas e realizadas.</small></span>
+              </button>
+            </li>
+          </ol>
+        </div>
+
+        <div class="celular">
+          <div class="tela-area">
+
+            <!-- PACIENTE -->
+            <div class="tela ativa" id="t-login">
+              <div class="app-topo">Vitally</div>
+              <div class="app-corpo">
+                <h4>Entrar</h4>
+                <div class="campo">E-mail</div>
+                <div class="campo">Senha</div>
+                <button class="btn-app" data-ir="t-horarios">Entrar</button>
+                <p style="margin-top: 14px; text-align: center">
+                  Ainda não tem conta? <strong>Cadastre-se</strong>
+                </p>
+              </div>
+            </div>
+
+            <div class="tela" id="t-horarios">
+              <div class="app-topo">Agendar consulta</div>
+              <div class="app-corpo">
+                <h4>Especialidade</h4>
+                <div class="chips" id="g-especialidade">
+                  <button class="chip sel">Clínico geral</button>
+                  <button class="chip">Pediatria</button>
+                  <button class="chip">Cardiologia</button>
+                  <button class="chip">Ginecologia</button>
+                </div>
+
+                <h4>Dia</h4>
+                <div class="chips" id="g-dia">
+                  <button class="chip sel">Seg 30/11</button>
+                  <button class="chip">Ter 01/12</button>
+                  <button class="chip">Qua 02/12</button>
+                </div>
+
+                <h4>Horários disponíveis</h4>
+                <div class="chips" id="g-horario">
+                  <button class="chip">08:00</button>
+                  <button class="chip">09:30</button>
+                  <button class="chip">10:30</button>
+                  <button class="chip">14:00</button>
+                </div>
+
+                <button class="btn-app" id="btnSolicitar" data-ir="t-confirmacao" disabled>
+                  Solicitar consulta
+                </button>
+              </div>
+            </div>
+
+            <div class="tela" id="t-confirmacao">
+              <div class="app-topo">Consulta solicitada</div>
+              <div class="app-corpo">
+                <div class="confirmacao">✓</div>
+                <h4 style="text-align: center">Tudo certo!</h4>
+                <div class="resumo">
+                  <strong>Especialidade:</strong> <span id="res-esp">Clínico geral</span><br />
+                  <strong>Dia:</strong> <span id="res-dia">Seg 30/11</span><br />
+                  <strong>Horário:</strong> <span id="res-hora">08:00</span><br />
+                  <strong>Status:</strong> <span class="status">Aguardando confirmação</span>
+                </div>
+                <button class="btn-app" data-ir="t-consultas">Ver minhas consultas</button>
+              </div>
+            </div>
+
+            <div class="tela" id="t-consultas">
+              <div class="app-topo">Minhas consultas</div>
+              <div class="app-corpo">
+                <div class="item-lista">
+                  <div>
+                    <strong id="nova-titulo">Clínico geral</strong>
+                    <span id="nova-info">Seg 30/11 · 08:00</span>
+                  </div>
+                  <div class="acoes">
+                    <span class="status">Aguardando</span>
+                    <button class="mini-btn claro cancelar">Cancelar</button>
+                  </div>
+                </div>
+
+                <div class="item-lista">
+                  <div>
+                    <strong>Cardiologia</strong>
+                    <span>Qua 02/12 · 14:00</span>
+                  </div>
+                  <div class="acoes">
+                    <span class="status ok">Confirmada</span>
+                    <button class="mini-btn claro cancelar">Cancelar</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- SECRETÁRIO(A) -->
+            <div class="tela" id="t-solicitacoes">
+              <div class="app-topo">Solicitações</div>
+              <div class="app-corpo">
+                <div class="item-lista">
+                  <div><strong>Maria S.</strong><span>Clínico geral · Seg 30/11 · 08:00</span></div>
+                  <div class="acoes">
+                    <span class="status">Pendente</span>
+                    <button class="mini-btn confirmar">Confirmar</button>
+                  </div>
+                </div>
+                <div class="item-lista">
+                  <div><strong>João P.</strong><span>Pediatria · Seg 30/11 · 09:30</span></div>
+                  <div class="acoes">
+                    <span class="status">Pendente</span>
+                    <button class="mini-btn confirmar">Confirmar</button>
+                  </div>
+                </div>
+                <div class="item-lista">
+                  <div><strong>Ana L.</strong><span>Cardiologia · Qua 02/12 · 14:00</span></div>
+                  <div class="acoes">
+                    <span class="status">Pendente</span>
+                    <button class="mini-btn confirmar">Confirmar</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="tela" id="t-agenda">
+              <div class="app-topo">Agenda do dia</div>
+              <div class="app-corpo">
+                <div class="item-lista">
+                  <div><strong>08:00 · Maria S.</strong><span>Clínico geral</span></div>
+                  <span class="status ok">Confirmada</span>
+                </div>
+                <div class="item-lista">
+                  <div><strong>09:30 · João P.</strong><span>Pediatria</span></div>
+                  <span class="status">Aguardando</span>
+                </div>
+                <div class="item-lista">
+                  <div><strong>14:00 · Ana L.</strong><span>Cardiologia</span></div>
+                  <span class="status ok">Confirmada</span>
+                </div>
+              </div>
+            </div>
+
+            <div class="tela" id="t-pacientes">
+              <div class="app-topo">Pacientes</div>
+              <div class="app-corpo">
+                <div class="item-lista">
+                  <div><strong>Maria S.</strong><span>Cadastro atualizado</span></div>
+                </div>
+                <div class="item-lista">
+                  <div><strong>João P.</strong><span>Cadastro atualizado</span></div>
+                </div>
+                <div class="item-lista">
+                  <div><strong>Ana L.</strong><span>Cadastro atualizado</span></div>
+                </div>
+                <button class="btn-app">+ Cadastrar paciente</button>
+              </div>
+            </div>
+
+            <div class="tela" id="t-resumo">
+              <div class="app-topo">Resumo</div>
+              <div class="app-corpo">
+                <div class="contadores">
+                  <div class="contador"><strong>12</strong>Agendadas</div>
+                  <div class="contador"><strong>3</strong>Canceladas</div>
+                  <div class="contador"><strong>28</strong>Realizadas</div>
+                </div>
+                <p>
+                  Acompanhe a quantidade de consultas agendadas, canceladas e
+                  realizadas no posto.
+                </p>
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </div>
+
+      <p class="aviso-demo">Simulação com dados fictícios, apenas para demonstração.</p>
+    </section>
+
+    <section class="extra">
+      <div class="extra-container">
+        <h2 class="extra-titulo">Mais Organização para o Posto</h2>
+        <p class="extra-subtitulo">
+          Do outro lado, a secretaria recebe as solicitações e organiza a
+          agenda sem filas e sem papel.
+        </p>
+
+        <div class="extra-cards">
+          <div class="extra-card">
+            <img src="img/equipe-medica.png" alt="Equipe médica" class="extra-icon" />
+            <p class="extra-card-text">Gestão da agenda</p>
+          </div>
+
+          <div class="extra-card">
+            <img src="img/inscricao-confirmada.png" alt="Confirmação" class="extra-icon" />
+            <p class="extra-card-text">Confirmação de consultas</p>
+          </div>
+
+          <div class="extra-card">
+            <img src="img/computacao-em-nuvem.png" alt="Nuvem com cadeado" class="extra-icon" />
+            <p class="extra-card-text">Dados protegidos</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer class="rodape">
+      <img src="img/frequencia-cardiaca.png" alt="" />
+      <p><strong>Vitally</strong></p>
+      <p>Agendamento de consultas na rede pública de saúde.</p>
+      <p class="copy">© 2026 Vitally. Todos os direitos reservados.</p>
+    </footer>
+
+    <script src="menu.js"></script>
+    <script src="demo.js"></script>
+  </body>
+</html>

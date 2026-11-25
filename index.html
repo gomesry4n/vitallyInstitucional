@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Vitally: aplicativo para solicitar e acompanhar consultas na rede pública de saúde, sem filas." />
+    <title>Vitally | Sua consulta sem enfrentar filas</title>
+    <link
+      rel="shortcut icon"
+      href="img/frequencia-cardiaca.png"
+      type="image/x-icon"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+
+  <body>
+    <header class="header">
+      <img src="img/logo vitally.png" alt="Vitally" class="logo" />
+
+      <nav class="menu-desktop">
+        <a href="index.html" class="atual">Início</a>
+        <a href="projeto.html">O Projeto</a>
+        <a href="agendamento.html">Como Funciona</a>
+        <a href="index.html#baixar" class="btn-baixar">Baixe o App</a>
+      </nav>
+
+      <div id="menuBtn" class="menu-icon">☰</div>
+    </header>
+
+    <div class="fundo-menu"></div>
+
+    <nav class="menu-lateral">
+      <ul>
+        <li><a href="index.html">Início</a></li>
+        <li><a href="projeto.html">O Projeto</a></li>
+        <li><a href="agendamento.html">Como Funciona</a></li>
+        <li><a href="index.html#baixar">Baixe o App</a></li>
+      </ul>
+    </nav>
+
+    <section class="destaque" id="inicio">
+      <h2>Sua consulta <br /><strong>Sem Enfrentar Filas</strong></h2>
+      <p><strong>(Direto do seu celular)</strong></p>
+      <p class="descricao">
+        O Vitally é o aplicativo para solicitar e acompanhar consultas na rede
+        pública de saúde: agendamento fácil, sem precisar ir ao posto só para
+        tentar conseguir um horário.
+      </p>
+
+      <div class="botoes" id="baixar">
+        <a
+          href="https://play.google.com/store/search?q=Vitally&c=apps&hl=pt_BR"
+          target="_blank"
+          class="google"
+        >
+          <img src="img/google-play.png" alt="logo" />
+          Google Play
+        </a>
+        <a
+          href="https://www.apple.com/br/app-store/"
+          target="_blank"
+          class="apple"
+        >
+          <img src="img/logotipo-da-apple.png" alt="logo" />
+          App Store
+        </a>
+      </div>
+    </section>
+
+    <section class="func">
+      <h2>Funcionalidades</h2>
+
+      <div class="cards">
+        <div class="card">
+          <img src="img/agenda.png" alt="Agenda" class="icon" />
+          <h3>Agendamento simplificado</h3>
+          <p>Veja os horários disponíveis, solicite sua consulta e cancele quando precisar, sem burocracia.</p>
+        </div>
+
+        <div class="card">
+          <img src="img/equipe-medica.png" alt="Equipe médica" class="icon" />
+          <h3>Gestão pela secretaria</h3>
+          <p>A secretaria organiza a agenda, confirma os agendamentos e acompanha o status de cada consulta.</p>
+        </div>
+
+        <div class="card">
+          <img src="img/computacao-em-nuvem.png" alt="Nuvem com cadeado" class="icon" />
+          <h3>Acesso seguro por perfil</h3>
+          <p>Cada usuário acessa apenas o que é do seu perfil e os dados ficam protegidos.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="secao-clara">
+      <h2 class="titulo-secao">Por que o Vitally existe</h2>
+      <p class="texto-secao">
+        Agendar consulta em posto de saúde público costuma significar filas
+        presenciais, horários limitados e dificuldade de locomoção. Muita gente
+        precisa sair cedo, faltar ao trabalho ou aos estudos, ou depender de
+        terceiros só para marcar um atendimento.
+      </p>
+      <p class="texto-secao">
+        O Vitally leva esse agendamento para o celular: simples, acessível e
+        pensado para quem mais precisa.
+      </p>
+
+      <div class="botoes">
+        <a href="projeto.html" class="botao botao-escuro">Conheça o projeto</a>
+        <a href="agendamento.html" class="botao botao-verde">Veja como funciona</a>
+      </div>
+    </section>
+
+    <section class="extra">
+      <div class="extra-container">
+        <h2 class="extra-titulo">Menos Filas, Mais Saúde.</h2>
+        <p class="extra-subtitulo">
+          Solicite sua consulta de onde estiver e deixe o atendimento do posto
+          mais organizado para todos.
+        </p>
+
+        <div class="extra-cards">
+          <div class="extra-card">
+            <img src="img/calendario.png" alt="Calendário" class="extra-icon" />
+            <p class="extra-card-text">Menos filas</p>
+          </div>
+
+          <div class="extra-card">
+            <img src="img/smartphone.png" alt="Celular" class="extra-icon" />
+            <p class="extra-card-text">Mais comodidade</p>
+          </div>
+
+          <div class="extra-card">
+            <img src="img/agenda.png" alt="Agenda" class="extra-icon" />
+            <p class="extra-card-text">Mais organização</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer class="rodape">
+      <img src="img/frequencia-cardiaca.png" alt="" />
+      <p><strong>Vitally</strong></p>
+      <p>Agendamento de consultas na rede pública de saúde.</p>
+      <p class="copy">© 2026 Vitally. Todos os direitos reservados.</p>
+    </footer>
+
+    <script src="menu.js"></script>
+  </body>
+</html>
